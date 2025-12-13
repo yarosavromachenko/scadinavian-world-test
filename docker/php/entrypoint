@@ -29,4 +29,4 @@ echo "🗄️ Running migrations..."
 php bin/console doctrine:migrations:migrate --no-interaction || true
 
 echo "🚀 Starting Symfony server..."
-exec symfony server:start --no-tls --allow-http --port=8000 --no-ansi
+exec symfony server:start --no-tls --allow-http --listen-ip=0.0.0.0 --port=8000 --no-ansi
