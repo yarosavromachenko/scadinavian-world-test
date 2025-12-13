@@ -18,7 +18,7 @@ RUN curl -sS https://get.symfony.com/cli/installer | bash \
 
 WORKDIR /var/www/html
 
-COPY docker/php/entrypoint.sh /entrypoint.sh
+COPY docker/php/entrypoint /entrypoint
 RUN chmod +x /entrypoint
 
 ENTRYPOINT ["/entrypoint"]
